@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @coffeee.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @coffeee.type %>
+</p>
+
+<p>
+  <strong>Desctrption:</strong>
+  <%= @coffeee.desctrption %>
+</p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @coffeee.home %>
+</p>
+
+<p>
+  <strong>Img:</strong>
+  <%= @coffeee.img %>
+</p>
+
+<p>
+  <strong>Something:</strong>
+  <%= @coffeee.something %>
+</p>
+
+<%= link_to 'Edit', edit_coffeee_path(@coffeee) %> |
+<%= link_to 'Back', coffeees_path %>

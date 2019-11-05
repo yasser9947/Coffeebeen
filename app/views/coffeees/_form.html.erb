@@ -1,0 +1,47 @@
+<%= form_with(model: coffeee, local: true) do |form| %>
+  <% if coffeee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coffeee.errors.count, "error") %> prohibited this coffeee from being saved:</h2>
+
+      <ul>
+      <% coffeee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_area :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desctrption %>
+    <%= form.text_field :desctrption %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home %>
+    <%= form.text_field :home %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img %>
+    <%= form.text_field :img %>
+  </div>
+
+  <div class="field">
+    <%= form.label :something %>
+    <%= form.text_field :something %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
